@@ -242,6 +242,15 @@
       <FileType>Document</FileType>
     </CopyFileToFolders>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="CODE_COMPARISON.md" />
+    <None Include="FILE_CHECKLIST.md" />
+    <None Include="IME_IMPROVEMENTS.md" />
+    <None Include="IMPROVEMENTS_EN_CN.md" />
+    <None Include="QUICK_REFERENCE.md" />
+    <None Include="README_PROJECT.md" />
+    <None Include="REFACTORING_SUMMARY.md" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

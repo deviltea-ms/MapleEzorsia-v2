@@ -9,11 +9,14 @@ private:
 	static MainMain* _s_pInstance;
 
 public:
-	static FILE* stream;
 	static bool ownLoginFrame;
 	static bool ownCashShopFrame;
 	static bool EzorsiaV2WzIncluded;
 	static bool useV62_ExpTable;
+	static bool usingEzorsiaV2Wz;
+	static bool CustomLoginFrame;
+	static bool bigLoginFrame;
+	static FILE* stream;
 	static const char* m_sRedirectIP;
 	static SOCKET m_GameSock;
 	static WSPPROC_TABLE m_ProcTable;
@@ -23,9 +26,6 @@ public:
 	static const char* use_custom_dll_1;
 	static const char* use_custom_dll_2;
 	static const char* use_custom_dll_3;
-	static bool usingEzorsiaV2Wz;
-	static bool CustomLoginFrame;
-	static bool bigLoginFrame;
 	static HANDLE mainTHread;
 
 private: // forcing the class to only have one instance, created through CreateInstance

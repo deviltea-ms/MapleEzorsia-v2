@@ -69,8 +69,12 @@ void MainFunc() {
 	std::cout << " Applying updated startup routines" << std::endl;
 	Client::UpdateGameStartup();
 
-	std::cout << "Applying resolution " << Client::m_nGameWidth << "x" << Client::m_nGameHeight << std::endl;
+	std::cout << "Applying resolution " << Client::GAME_WIDTH << "x" << Client::GAME_HEIGHT << std::endl;
 	Client::UpdateResolution();
+
+	if (Client::ENABLE_IME_INPUT) {
+		Client::EnableIMEInput();
+	}
 
 	dinput8::CreateHook();	std::cout << "dinput8 hook initialized" << std::endl;
 }

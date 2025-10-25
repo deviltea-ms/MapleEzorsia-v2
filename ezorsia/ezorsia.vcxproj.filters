@@ -172,4 +172,13 @@
     <CopyFileToFolders Include="EzorsiaV2_UI.wz" />
     <CopyFileToFolders Include="MapleEzorsiaV2wzfiles.img" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="IME_IMPROVEMENTS.md" />
+    <None Include="CODE_COMPARISON.md" />
+    <None Include="REFACTORING_SUMMARY.md" />
+    <None Include="QUICK_REFERENCE.md" />
+    <None Include="IMPROVEMENTS_EN_CN.md" />
+    <None Include="FILE_CHECKLIST.md" />
+    <None Include="README_PROJECT.md" />
+  </ItemGroup>
 </Project>

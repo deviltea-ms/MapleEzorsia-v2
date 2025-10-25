@@ -112,8 +112,8 @@ __declspec(naked) void PositionBossBarY2() {
 	}
 }
 
-int myHeight = -(Client::m_nGameHeight - 600) / 2;
-int myWidth = -(Client::m_nGameWidth - 800) / 2;
+int myHeight = -(Client::GAME_HEIGHT - 600) / 2;
+int myWidth = -(Client::GAME_WIDTH - 800) / 2;
 
 __declspec(naked) void CashShopFix() {
 	__asm {

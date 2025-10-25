@@ -439,7 +439,7 @@ _StringPool__GetString_t _StringPool__GetString_rewrite = [](void* pThis, void* 
 	{
 	case 1307:	//1307_UI_LOGINIMG_COMMON_FRAME = 51Bh
 		if (MainMain::EzorsiaV2WzIncluded && !MainMain::ownLoginFrame) {
-			switch (Client::m_nGameWidth)
+			switch (Client::GAME_WIDTH)
 			{
 			case 1280:	//ty teto for the suggestion to use ZXString<char>::Assign and showing me available resources
 				*ret = ("MapleEzorsiaV2wzfiles.img/Common/frame1280"); break;
@@ -1977,7 +1977,7 @@ static _sub_9F5239_t _sub_9F5239_rewrite = [](CWvsApp* pThis, void* edx) {
 		_sub_777347(nullptr, nullptr);//void __cdecl set_stage(CStage *pStage, void *pParam)
 	}
 	SetFocus(v14->m_hWnd);
-	if (Client::WindowedMode) { SetForegroundWindow(v14->m_hWnd); }
+	if (Client::DEFAULT_WINDOWED_MODE) { SetForegroundWindow(v14->m_hWnd); }
 		//likely stuff to check it's on memory, cancelling; add it here if you want to verify client memory
 	//v18 = v10;
 	//v35 = -1;//zref counter

@@ -4,6 +4,13 @@
 //#pragma optimize("", off) //non-optimized function for testing purposes
 bool Memory::UseVirtuProtect = true;
 
+
+void* Memory::GetFunctionAddress(const char* moduleName, const char* functionName) {
+    HMODULE hModule = GetModuleHandleA(moduleName);
+    if (!hModule) return nullptr;
+    return reinterpret_cast<void*>(GetProcAddress(hModule, functionName));
+}
+
 bool Memory::SetHook(bool attach, void** ptrTarget, void* ptrDetour)
 {
     if (DetourTransactionBegin() != NO_ERROR)
